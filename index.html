@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+<h1> Predict The Number? </h1>
+<input type="number" id="id1">
+<button type="button"
+onclick=" predict()">
+Submit</button>
+
+<script>
+var computer = Math.round(Math.random()*10);
+console.log(computer);
+var user=document.getElementById('id1').value;
+function predict(){
+if(user == computer)
+{
+alert("That's Correct!");
+}
+else{
+window.alert("That's Wrong! My number was " + computer);
+//window.alert(computer);
+
+}
+}
+</script>
+</body>
+</head>
+</html>
